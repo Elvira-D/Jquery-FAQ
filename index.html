@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+
+        $(".text").hide() ;
+          $(".expand").click(function(){
+
+            $(this).parent().next().slideToggle(600);
+
+          }) ;
+
+        });
+
+    </script>
+
+    <style>
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main {
+            margin-bottom: 10px;
+            width: 70vw;
+        }
+
+        .expand {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: darkslategray;
+        }
+
+        .text {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h2 {
+            color: brown;
+        }
+
+        .expand:hover {
+            background-color: lightgray;
+            border-radius: 3px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="container">
+        <div class="main">
+            <a href="#"><div class="expand">Question 1</div></a>
+            <p class="text">Curabitur molestie finibus nulla, a suscipit libero feugiat quis. Fusce sit amet condimentum ligula. Mauris ac tortor bibendum, laoreet arcu sed, malesuada justo. Pellentesque placerat blandit ligula, nec ornare magna iaculis ac. Curabitur rutrum turpis dui, gravida fringilla tellus dictum id. Nullam molestie quam justo, vitae rhoncus lectus suscipit eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi malesuada, turpis ultrices viverra facilisis, elit ipsum sollicitudin felis, et suscipit velit lorem eu odio. Nullam sit amet pellentesque felis. Mauris elementum posuere nunc nec bibendum. Ut sem eros, aliquam vel turpis at, lobortis porttitor leo. Fusce tristique mauris id finibus feugiat.</p>
+        </div>
+        <div class="main">
+            <a href="#"><div class="expand">Question 2</div></a>
+            <p class="text">Aliquam ullamcorper vitae est vel luctus. Nullam blandit eu lectus sit amet elementum. In tempus enim sit amet eros euismod venenatis. Ut condimentum elit quis tincidunt efficitur. Quisque ut egestas lectus. Donec venenatis ipsum gravida convallis eleifend. Ut pharetra bibendum fermentum. Proin imperdiet sit amet ex vel vestibulum.</p>
+        </div>
+        <div class="main">
+            <a href="#"><div class="expand">Question 3</div></a>
+            <p class="text">Ut ut est et tortor ultricies finibus tincidunt eu lectus. Sed fermentum ultrices purus, ac pharetra velit gravida quis. Nullam lacinia orci et urna vehicula, eget iaculis tellus venenatis. Morbi accumsan feugiat nulla ac molestie. Etiam viverra urna lectus, in iaculis ante dignissim eu. Quisque rutrum dictum dolor ut vehicula. Phasellus aliquam nibh eu odio fermentum fermentum eget faucibus elit. Pellentesque eleifend pretium eleifend. Vestibulum ultricies enim eu ante varius ornare.</p>
+        </div>
+        <div class="main">
+            <a href="#"><div class="expand">Question 4</div></a>
+            <p class="text">Integer blandit sem sed est vehicula ornare. In quis nisl mollis enim placerat eleifend. Cras nunc enim, dignissim eget porttitor id, posuere non nisi. Ut semper quis urna ac pellentesque. Nam laoreet vehicula ante in pulvinar. Vivamus pharetra nec quam in volutpat. Aliquam luctus pretium ligula eu facilisis. Suspendisse quis orci bibendum est iaculis dapibus sed vitae leo.</p>
+        </div>
+    </div>
+
+</body>
+</html>
